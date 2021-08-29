@@ -1,0 +1,281 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<title>Start Page New</title>
+
+<style>
+body {
+  background-color: #F8F8BB;
+  font-size:100%;
+  line-height:1.125em;
+  margin:0;
+}
+p.center {text-align: center;}
+div {float:left;} /* default all divs float left */
+a {text-decoration: none;}
+a:link {color: #0000bb;}
+a:visited {color: #0000bb;}
+a:active {color: #00FF00;}
+a:hover {text-decoration: underline;}
+div.boxMax {  width:100%; }
+div.boxFill { overflow:hidden; }
+div.boxRight { float:right; }
+div.nofloat {
+  clear:both;
+}
+span.smalltext {font-size: 0.9em;}
+span.microtext {font-size: 0.7em;}
+span.smallsymbol {font-size: 0.6em; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+/* --- link boxes --- */
+div.linkBox {
+
+  width:200px;
+  height:425px;
+  margin-top:1px;
+  margin-bottom:1px;
+  margin-left:1px;
+  margin-right:1px;
+  border:#eeeeaa 1px solid;
+}
+div.linkBox h1 {
+  background-color: #E8E8AA;
+  font-size: 0.95em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top:0px;
+  margin-bottom:0px;
+  text-align: center;
+}
+.ie7 div.linkBox h1 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+div.linkBox h2 {
+  text-decoration: underline;
+  font-size: 0.75em;
+  margin-top: 0px;
+  margin-bottom:3px;
+  padding-left:6px;
+}
+div.linkBox h3 {
+  font-size: 0.75em;
+  margin-top: -3px;
+  margin-bottom:-3px;
+  padding-left:14px;
+}
+div.linkBox ul {
+  margin-top: 1px;
+  margin-bottom: 3px;
+  margin-left:14px;
+  padding-left:0px;
+  list-style-type: none;
+}
+div.linkBox li {
+  text-indent:-8px;
+  line-height:2em;
+  font-size: 0.8em;
+  font-family: sans-serif;
+}
+div.linkBox li.microtext {margin-top: -1px;
+  line-height:1.4em;
+  font-size: 0.5em;
+  font-family: sans-serif;
+}
+div.linkBox input {
+  font-size: 0.8em;
+  line-height:1em;
+  height:15px;
+  padding-left:1px;
+  padding-right:1px;
+}
+div.nameBox {
+  width:32px;
+}
+/*------Title Box-----*/
+div.titleBox {
+  color:#ffeecc;
+  background-color:#441177;
+  font-size: 0.85em;
+  padding:0px;
+  min-height:85px;
+  width:100%;/*must specify in IE8 or else gradient will not work*/
+  /* gradient */
+  background: linear-gradient(to bottom, rgba(136,34,187,1) 0%, rgba(17,0,51,1) 100%); /* W3C */
+  background: -moz-linear-gradient(top,  rgba(136,34,187,1) 0%, rgba(17,0,51,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(136,34,187,1)), color-stop(100%,rgba(17,0,51,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(136,34,187,1) 0%, rgba(17,0,51,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(136,34,187,1) 0%, rgba(17,0,51,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(136,34,187,1) 0%, rgba(17,0,51,1) 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8822bb', endColorstr='#110033',GradientType=0 ); /* IE6-9 */
+
+
+}
+div.titleBox a:link {color: #ffee44;}
+div.titleBox a:visited {color: #ffee44;}
+div.titleBox a:active {color: #00FF00;}
+/*------Title Block-----*/
+div.titleBlock {
+  max-width:230px;
+  margin-left:20px;
+  margin-top:4px;
+  margin-bottom:4px;
+  padding-bottom:0px;
+}
+div.titleBlock#siteTitleDiv {max-width:310px;}
+div.titleBlock.right {
+  float:right;
+}
+div.titleBlock#moonBlock {
+  height:54px;
+  width:100px;
+  margin-right:25px;
+  text-align:center;
+  border-bottom:1px solid gray;
+}
+div.titleBlock p {
+  margin:0px;
+  padding:2px;
+  font-size:0.9em;
+}
+p#siteTitle {
+  margin-top:8px;
+  margin-bottom:3px;
+  font-size:1.9em;
+}
+span.moonsymbol {
+  font-size: 2em;
+}
+div.timeCell {
+  float:none;
+  font-size: 1.1em;
+  line-height:1.1em;
+  font-family: monospace;
+}
+/*------Footer Block-----*/
+div#validator { float:left; width:100%; margin-top:10px;}
+div.footerBlock {
+  width:250px;
+  padding: 5px;
+}
+div.footerBlock ul {
+  /*margin-top: 1px;
+  margin-bottom: 3px;
+  margin-left:14px;*/
+  padding-left:5px;
+  list-style-type: none;
+}
+/*------ Footer ------*/
+div#footer { margin-top:4px; }
+
+
+</style>
+
+</head>
+
+<body">
+
+<div class="titleBox"><!-- - - - - - - - - - - - - - - - - -->
+
+<div id="siteTitleDiv" class="titleBlock">
+<p id="siteTitle">w322's Navigation</p>
+<p>and <a href="http://en.wikipedia.org/wiki/HTML5">
+HTML5</a>, <a href="http://en.wikipedia.org/wiki/Css">
+CSS</a>, <a href="http://en.wikipedia.org/wiki/Javascript">
+Javascript</a>, <a href="http://jquery.com/">
+jQuery</a>
+Test File</p>
+</div>
+
+<div class="nofloat"></div><!-- need this to make titleBox expand vertically -->
+</div><!-- end titleBox -->
+
+<div class="linkBox"><!-- - - - - - - - - - - - - - - - - -->
+
+<h1>News</h1>
+
+<ul>
+<li><a href="http://news.google.com/news">
+Google News</a></li>
+
+<li><a href="http://en.wikipedia.org/wiki/Portal:Current_events">
+Wikipedia Current Events</a></li>
+
+<li><a href="https://apnews.com/">
+AP News</a></li>
+
+<li><a href="https://www.bbc.com/news">
+BBC News</a></li>
+
+<li><a href="http://www.usatoday.com/news/digest/newsline.htm">
+USAToday News</a></li>
+
+<li><a href="https://www.reuters.com/">
+Reuters</a></li>
+
+<li><a href="http://www.lxer.com">
+LXer</a></li>
+
+<li><a href="http://www.sciam.com/">
+Scientific American</a></li>
+
+<li><a href="http://www.popsci.com/">
+Popular Science</a></li>
+
+<li><a href="https://www.nextbigfuture.com/">
+Next Big Future</a></li>
+</ul>
+
+<h2>Weather</h2>
+
+<ul>
+  <li><a href="https://www.wunderground.com/hurricane?index_region=at">
+Hurricane</a></li>
+
+  <li><a href="http://www.weather.gov/satellite">
+Satellite</a></li>
+</ul>
+
+</div>
+
+<div class="linkBox"><!-- - - - - - - - - - - - - - - - - -->
+
+<h1>Galadriel</h1>
+
+<ul>
+<li><a href="https://www.facebook.com">
+Facebook</a></li>
+
+<li><a href="http://weeklyad.publix.com/Publix/Entry/LandingContent?storeid=2501041&sneakpeek=N&listingid=0">
+Publix Ads</a></li>
+
+<li><a href="http://www.goodreads.com/user/sign_in">
+GoodReads</a></li>
+
+<li><a href="https://antarcticsun.usap.gov/">
+Antarctic Sun</a></li>
+
+</ul>
+
+<h1>Maps</h1>
+
+<ul>
+
+<li><a href="http://www.google.com/maps?ie=UTF-8&amp;oe=UTF-8&amp;hl=en&amp;tab=wl">
+Google Maps</a> |
+  <a href="https://www.google.com/maps/place/Warner+Robins,+GA+31088,+USA/@32.5833056,-83.5942278,14z/data=!4m5!3m4!1s0x88f3e0eda73f4849:0xc0ec4fef96636dc3!8m2!3d32.590481!4d-83.624201!5m1!1e1?hl=en">
+Traffic</a></li>
+
+  <li><a href="https://gis.cdc.gov/grasp/fluview/main_Widget.html">
+Influenza Map</a></li>
+
+</ul>
+
+</div>
+
+
+</body>
+</html>
